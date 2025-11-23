@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Manga Gallery</h1>
+            <div class="settings-bar">
+                <input type="text" id="comics-path" placeholder="Path to comics directory">
+                <button id="load-path-btn">Load Directory</button>
+            </div>
+        </header>
+        <main id="gallery" class="gallery-grid">
+            <!-- Cards will be injected here -->
+        </main>
+    </div>
+
+    <!-- Fullscreen Viewer -->
+    <div id="viewer" class="viewer hidden">
+        <button id="close-btn" class="nav-btn close">&times;</button>
+        <button id="prev-btn" class="nav-btn prev">&#10094;</button>
+        <div class="image-container">
+            <img id="current-image" src="" alt="Comic Page">
+            <div id="page-indicator"></div>
+        </div>
+        <button id="next-btn" class="nav-btn next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
